@@ -1,0 +1,126 @@
+<!-- Шапка сайту -->
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="media/Image 02-1.png" alt="Логотип Sweet Flower Shop" width="140">
+        </a>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="#gallery">Каталог</a></li>
+            <li><a href="#survey">Анкета</a></li>
+            <li><a href="#auth">Вхід</a></li>
+        </ul>
+    </nav>
+
+    <!-- Пошук -->
+    <form action="#" method="get">
+        <input type="search" name="q" placeholder="Пошук..." aria-label="Пошук по сайту">
+        <button type="submit">Знайти</button>
+    </form>
+</header>
+
+<main>
+    <!-- Баннер -->
+    <section>
+        <h1>Sweet Flower Shop</h1>
+        <p>Свіжі квіти та авторські букети з доставкою.</p>
+    </section>
+
+    <!-- Каталог товарів -->
+    <section id="gallery">
+        <h2>Наші квіти</h2>
+        <article>
+            <p><b>Півонія "Red Charm"</b></p>
+            <img src="media/Image-3.png" alt="Букет рожевих півоній" width="200">
+              <p><b>Ціна: 120грн/шт</b></p>
+           <article> 
+            <p><b>Півонія "Coral Charm"</b></p>
+            <img src="media/images (1).jfif" alt="Букет рожевих півоній" width="200">
+            <p><b>Ціна: 120грн/шт</b></p>
+            <article>
+                <p><b>Півонія "Command Performance"</b></p>
+            <img src="media/Image.png" alt="Букет рожевих півоній" width="200">
+              <p><b>Ціна: 100грн/шт </b></p
+
+              <p><b><h3>Ніжний букет</h3>
+            <b>Склад: півонії.</p>
+                <img src="media/images23.jfif" alt="">
+            <p><b>Ціна: 1500 грн</b></p>
+        </article>
+    </section>
+
+    <!-- Опитувальник / Анкета -->
+    <section id="survey">
+        <h2>Опитувальник клієнта</h2>
+        <form action="#" method="post">
+            <p>
+                <label for="username">Логін:</label><br>
+                <input type="text" id="username" name="username" placeholder="Введіть логін" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="name@mail.com" required>
+            </p>
+
+            <p>
+                <label for="msg">Ваш відгук:</label><br>
+                <textarea id="msg" name="message" placeholder="Напишіть відгук..." required></textarea>
+            </p>
+
+            <p>
+                <label for="category">Улюблені квіти:</label><br>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>-- Оберіть варіант --</option>
+                    <option value="roses">Троянди</option>
+                    <option value="peonies">Півонії</option>
+                </select>
+            </p>
+            <br><br>
+            <button type="submit">Надіслати</button>
+            <button type="reset">Очистити</button>
+        </form>
+    </section>
+
+    <!-- Вхід та Реєстрація -->
+    <section id="auth">
+        <h2>Авторизація</h2>
+        <form action="#" method="post">
+            <p>
+                <label for="l-email">Email:</label><br>
+                <input type="email" id="l-email" name="email" placeholder="Email" required>
+            </p>
+            <p>
+                <label for="l-pass">Пароль:</label><br>
+                <input type="password" id="l-pass" name="password" placeholder="Мін. 8 символів" minlength="8" required>
+            </p>
+            <button type="submit">Увійти</button>
+            <button type="reset">Очистити</button>
+        </form>
+
+        <h2>Реєстрація</h2>
+        <form action="#" method="post">
+            <p>
+                <label for="r-email">Email:</label><br>
+                <input type="email" id="r-email" name="email" placeholder="Email" required>
+            </p>
+            <p>
+                <label for="r-pass">Пароль:</label><br>
+                <input type="password" id="r-pass" name="password" placeholder="Мін. 8 символів" minlength="8" required>
+            </p>
+            <p>
+             <label for="r-pass2">Повторіть пароль:</label><br>
+                <input type="password" id="r-pass2" name="password_confirm" placeholder="Повторіть пароль" minlength="8" required>
+            </p>
+            <button type="submit">Зареєструватися</button>
+            <button type="reset">Очистити</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Sweet Flower Shop. Чернівці</p>
+</footer>   
